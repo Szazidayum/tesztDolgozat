@@ -5,10 +5,12 @@ function init(){
 }
 
 function megfordit(szoveg){
-    const tomb=[]
+    var tomb=szoveg.split("");
     console.log(szoveg);
-    for (let index = 0; index < szoveg.length; index++) {
-        tomb.push(szoveg[index]);
-    }
     console.log(tomb);
+    var forditottTomb=tomb.reverse();
+    var ujSzo=forditottTomb.join("");
+    console.log(ujSzo);
+    
+    return ujSzo;
 }
